@@ -1,0 +1,6 @@
+framework module Pods_RoundGames_RoundGamesUITests {
+  umbrella header "Pods-RoundGames-RoundGamesUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

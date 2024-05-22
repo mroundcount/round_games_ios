@@ -1,0 +1,930 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4063E4A5C6624B878BEB993F /* Pods_RoundGames_RoundGamesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1866D8B01351890D771EE56C /* Pods_RoundGames_RoundGamesUITests.framework */; };
+		82550E18E43535BFB29AFEF3 /* Pods_RoundGamesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 781A8FAEADE5829BAA067FC7 /* Pods_RoundGamesTests.framework */; };
+		BF2667892BBBCA560003C80B /* Hangman+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2667882BBBCA560003C80B /* Hangman+UI.swift */; };
+		BF26678E2BBBCD9E0003C80B /* words.txt in Resources */ = {isa = PBXBuildFile; fileRef = BF26678D2BBBCD9E0003C80B /* words.txt */; };
+		BF2667902BBBCDE80003C80B /* GameDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF26678F2BBBCDE80003C80B /* GameDataManager.swift */; };
+		BF2667922BBBCF630003C80B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2667912BBBCF630003C80B /* Constants.swift */; };
+		BF3481162BB0C0920023DE4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3481152BB0C0920023DE4E /* AppDelegate.swift */; };
+		BF3481182BB0C0920023DE4E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3481172BB0C0920023DE4E /* SceneDelegate.swift */; };
+		BF34811A2BB0C0920023DE4E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3481192BB0C0920023DE4E /* ViewController.swift */; };
+		BF34811D2BB0C0920023DE4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF34811B2BB0C0920023DE4E /* Main.storyboard */; };
+		BF3481202BB0C0920023DE4E /* RoundGames.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BF34811E2BB0C0920023DE4E /* RoundGames.xcdatamodeld */; };
+		BF3481222BB0C0970023DE4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF3481212BB0C0970023DE4E /* Assets.xcassets */; };
+		BF3481252BB0C0970023DE4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF3481232BB0C0970023DE4E /* LaunchScreen.storyboard */; };
+		BF3481302BB0C0980023DE4E /* RoundGamesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF34812F2BB0C0980023DE4E /* RoundGamesTests.swift */; };
+		BF34813A2BB0C0980023DE4E /* RoundGamesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3481392BB0C0980023DE4E /* RoundGamesUITests.swift */; };
+		BF34813C2BB0C0980023DE4E /* RoundGamesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF34813B2BB0C0980023DE4E /* RoundGamesUITestsLaunchTests.swift */; };
+		BF3481492BB10F400023DE4E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3481482BB10F400023DE4E /* HomeViewController.swift */; };
+		BF34814B2BB10FB10023DE4E /* HomeViewController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF34814A2BB10FB10023DE4E /* HomeViewController+UI.swift */; };
+		BF3481502BB110370023DE4E /* SignInViewController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF34814F2BB110370023DE4E /* SignInViewController+UI.swift */; };
+		BF3481522BB110560023DE4E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3481512BB110560023DE4E /* SignUpViewController.swift */; };
+		BF3481542BB110770023DE4E /* SignUpViewController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3481532BB110770023DE4E /* SignUpViewController+UI.swift */; };
+		BF3481562BB110B60023DE4E /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3481552BB110B60023DE4E /* ForgotPasswordViewController.swift */; };
+		BF3481582BB110DE0023DE4E /* ForgotPasswordViewController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3481572BB110DE0023DE4E /* ForgotPasswordViewController+UI.swift */; };
+		BF34815A2BB125F20023DE4E /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3481592BB125F20023DE4E /* Api.swift */; };
+		BF34815C2BB126200023DE4E /* Ref.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF34815B2BB126200023DE4E /* Ref.swift */; };
+		BF34815F2BB127AA0023DE4E /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF34815E2BB127AA0023DE4E /* SignInViewController.swift */; };
+		BF3481612BB12AB00023DE4E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3481602BB12AB00023DE4E /* User.swift */; };
+		BF3481632BB12ACE0023DE4E /* UserApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3481622BB12ACE0023DE4E /* UserApi.swift */; };
+		BF3481652BB12BAC0023DE4E /* PlaceHolderOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3481642BB12BAC0023DE4E /* PlaceHolderOne.swift */; };
+		BF7E3B892BF45E7100361D27 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BF7E3B882BF45E7100361D27 /* GoogleService-Info.plist */; };
+		BF7F715B2BF472D9003DC49B /* audioTestingII.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7F715A2BF472D9003DC49B /* audioTestingII.swift */; };
+		BF7F715D2BF473EA003DC49B /* audioTestingII+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7F715C2BF473EA003DC49B /* audioTestingII+UI.swift */; };
+		BF7F715F2BF70C3C003DC49B /* SpeechCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7F715E2BF70C3B003DC49B /* SpeechCoordinator.swift */; };
+		BF7F71622BF70CA7003DC49B /* SpeechCoordinator+Availability.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7F71612BF70CA7003DC49B /* SpeechCoordinator+Availability.swift */; };
+		BF7F71642BF70CC8003DC49B /* SpeechCoordinator+Transcription.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7F71632BF70CC8003DC49B /* SpeechCoordinator+Transcription.swift */; };
+		BF7F71662BF70F8F003DC49B /* DebuggingIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7F71652BF70F8F003DC49B /* DebuggingIdentifiers.swift */; };
+		BF853D592BBFB51F00FE0871 /* AudioCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF853D582BBFB51F00FE0871 /* AudioCommands.swift */; };
+		BFAFC4EE2BBBB9980099FAD2 /* Hangman.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAFC4ED2BBBB9980099FAD2 /* Hangman.swift */; };
+		BFC9E9B82BB3CCE0000061FE /* PlaceHolderTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC9E9B72BB3CCE0000061FE /* PlaceHolderTwo.swift */; };
+		E6290C971D303B799F4378A6 /* Pods_RoundGames.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C9DE1E5B5FFA1752C1F9C34 /* Pods_RoundGames.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BF34812C2BB0C0980023DE4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF34810A2BB0C0920023DE4E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF3481112BB0C0920023DE4E;
+			remoteInfo = RoundGames;
+		};
+		BF3481362BB0C0980023DE4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF34810A2BB0C0920023DE4E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF3481112BB0C0920023DE4E;
+			remoteInfo = RoundGames;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		14E017E1912F22648CB6F241 /* Pods-RoundGamesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoundGamesTests.debug.xcconfig"; path = "Target Support Files/Pods-RoundGamesTests/Pods-RoundGamesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1866D8B01351890D771EE56C /* Pods_RoundGames_RoundGamesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RoundGames_RoundGamesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		248A5916FCD5D59F08837ABB /* Pods-RoundGamesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoundGamesTests.release.xcconfig"; path = "Target Support Files/Pods-RoundGamesTests/Pods-RoundGamesTests.release.xcconfig"; sourceTree = "<group>"; };
+		2E4A44419B0D563CE61DF50E /* Pods-RoundGames-RoundGamesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoundGames-RoundGamesUITests.debug.xcconfig"; path = "Target Support Files/Pods-RoundGames-RoundGamesUITests/Pods-RoundGames-RoundGamesUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4C9DE1E5B5FFA1752C1F9C34 /* Pods_RoundGames.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RoundGames.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		781A8FAEADE5829BAA067FC7 /* Pods_RoundGamesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RoundGamesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8669EF2317F3B292F1AFA20A /* Pods-RoundGames.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoundGames.debug.xcconfig"; path = "Target Support Files/Pods-RoundGames/Pods-RoundGames.debug.xcconfig"; sourceTree = "<group>"; };
+		90B0B1962B28C7216A804DB7 /* Pods-RoundGames.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoundGames.release.xcconfig"; path = "Target Support Files/Pods-RoundGames/Pods-RoundGames.release.xcconfig"; sourceTree = "<group>"; };
+		BF2667882BBBCA560003C80B /* Hangman+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Hangman+UI.swift"; sourceTree = "<group>"; };
+		BF26678D2BBBCD9E0003C80B /* words.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = words.txt; sourceTree = "<group>"; };
+		BF26678F2BBBCDE80003C80B /* GameDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDataManager.swift; sourceTree = "<group>"; };
+		BF2667912BBBCF630003C80B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BF3481122BB0C0920023DE4E /* RoundGames.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoundGames.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF3481152BB0C0920023DE4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BF3481172BB0C0920023DE4E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BF3481192BB0C0920023DE4E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BF34811C2BB0C0920023DE4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BF34811F2BB0C0920023DE4E /* RoundGames.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RoundGames.xcdatamodel; sourceTree = "<group>"; };
+		BF3481212BB0C0970023DE4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BF3481242BB0C0970023DE4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BF3481262BB0C0970023DE4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF34812B2BB0C0980023DE4E /* RoundGamesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoundGamesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF34812F2BB0C0980023DE4E /* RoundGamesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundGamesTests.swift; sourceTree = "<group>"; };
+		BF3481352BB0C0980023DE4E /* RoundGamesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoundGamesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF3481392BB0C0980023DE4E /* RoundGamesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundGamesUITests.swift; sourceTree = "<group>"; };
+		BF34813B2BB0C0980023DE4E /* RoundGamesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundGamesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BF3481482BB10F400023DE4E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		BF34814A2BB10FB10023DE4E /* HomeViewController+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+UI.swift"; sourceTree = "<group>"; };
+		BF34814F2BB110370023DE4E /* SignInViewController+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignInViewController+UI.swift"; sourceTree = "<group>"; };
+		BF3481512BB110560023DE4E /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		BF3481532BB110770023DE4E /* SignUpViewController+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignUpViewController+UI.swift"; sourceTree = "<group>"; };
+		BF3481552BB110B60023DE4E /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		BF3481572BB110DE0023DE4E /* ForgotPasswordViewController+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ForgotPasswordViewController+UI.swift"; sourceTree = "<group>"; };
+		BF3481592BB125F20023DE4E /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		BF34815B2BB126200023DE4E /* Ref.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ref.swift; sourceTree = "<group>"; };
+		BF34815E2BB127AA0023DE4E /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		BF3481602BB12AB00023DE4E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		BF3481622BB12ACE0023DE4E /* UserApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserApi.swift; sourceTree = "<group>"; };
+		BF3481642BB12BAC0023DE4E /* PlaceHolderOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceHolderOne.swift; sourceTree = "<group>"; };
+		BF7E3B882BF45E7100361D27 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BF7F715A2BF472D9003DC49B /* audioTestingII.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = audioTestingII.swift; sourceTree = SOURCE_ROOT; };
+		BF7F715C2BF473EA003DC49B /* audioTestingII+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "audioTestingII+UI.swift"; sourceTree = "<group>"; };
+		BF7F715E2BF70C3B003DC49B /* SpeechCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechCoordinator.swift; sourceTree = "<group>"; };
+		BF7F71612BF70CA7003DC49B /* SpeechCoordinator+Availability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SpeechCoordinator+Availability.swift"; sourceTree = "<group>"; };
+		BF7F71632BF70CC8003DC49B /* SpeechCoordinator+Transcription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SpeechCoordinator+Transcription.swift"; sourceTree = "<group>"; };
+		BF7F71652BF70F8F003DC49B /* DebuggingIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebuggingIdentifiers.swift; sourceTree = "<group>"; };
+		BF853D582BBFB51F00FE0871 /* AudioCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioCommands.swift; sourceTree = "<group>"; };
+		BFAFC4ED2BBBB9980099FAD2 /* Hangman.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hangman.swift; sourceTree = "<group>"; };
+		BFC9E9B72BB3CCE0000061FE /* PlaceHolderTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceHolderTwo.swift; sourceTree = "<group>"; };
+		BFC9E9B92BB3D4E7000061FE /* RoundGames.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RoundGames.entitlements; sourceTree = "<group>"; };
+		C89421BB2D326491A5D9FED5 /* Pods-RoundGames-RoundGamesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoundGames-RoundGamesUITests.release.xcconfig"; path = "Target Support Files/Pods-RoundGames-RoundGamesUITests/Pods-RoundGames-RoundGamesUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF34810F2BB0C0920023DE4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6290C971D303B799F4378A6 /* Pods_RoundGames.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF3481282BB0C0980023DE4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82550E18E43535BFB29AFEF3 /* Pods_RoundGamesTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF3481322BB0C0980023DE4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4063E4A5C6624B878BEB993F /* Pods_RoundGames_RoundGamesUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8E28001943D6D2B8C8F52939 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8669EF2317F3B292F1AFA20A /* Pods-RoundGames.debug.xcconfig */,
+				90B0B1962B28C7216A804DB7 /* Pods-RoundGames.release.xcconfig */,
+				2E4A44419B0D563CE61DF50E /* Pods-RoundGames-RoundGamesUITests.debug.xcconfig */,
+				C89421BB2D326491A5D9FED5 /* Pods-RoundGames-RoundGamesUITests.release.xcconfig */,
+				14E017E1912F22648CB6F241 /* Pods-RoundGamesTests.debug.xcconfig */,
+				248A5916FCD5D59F08837ABB /* Pods-RoundGamesTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BF26678A2BBBCCF00003C80B /* Hangman Logic */ = {
+			isa = PBXGroup;
+			children = (
+				BF26678D2BBBCD9E0003C80B /* words.txt */,
+				BF26678F2BBBCDE80003C80B /* GameDataManager.swift */,
+				BF2667912BBBCF630003C80B /* Constants.swift */,
+			);
+			path = "Hangman Logic";
+			sourceTree = "<group>";
+		};
+		BF3481092BB0C0920023DE4E = {
+			isa = PBXGroup;
+			children = (
+				BF3481142BB0C0920023DE4E /* RoundGames */,
+				BF34812E2BB0C0980023DE4E /* RoundGamesTests */,
+				BF3481382BB0C0980023DE4E /* RoundGamesUITests */,
+				BF3481132BB0C0920023DE4E /* Products */,
+				8E28001943D6D2B8C8F52939 /* Pods */,
+				C20DEA6A05A6D1C7E7472E96 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BF3481132BB0C0920023DE4E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF3481122BB0C0920023DE4E /* RoundGames.app */,
+				BF34812B2BB0C0980023DE4E /* RoundGamesTests.xctest */,
+				BF3481352BB0C0980023DE4E /* RoundGamesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF3481142BB0C0920023DE4E /* RoundGames */ = {
+			isa = PBXGroup;
+			children = (
+				BFC9E9B92BB3D4E7000061FE /* RoundGames.entitlements */,
+				BF3481152BB0C0920023DE4E /* AppDelegate.swift */,
+				BF3481172BB0C0920023DE4E /* SceneDelegate.swift */,
+				BF3481192BB0C0920023DE4E /* ViewController.swift */,
+				BF34811B2BB0C0920023DE4E /* Main.storyboard */,
+				BF7F715A2BF472D9003DC49B /* audioTestingII.swift */,
+				BF7F715C2BF473EA003DC49B /* audioTestingII+UI.swift */,
+				BF7F71602BF70C67003DC49B /* SpeechCoordinator */,
+				BF34815D2BB126370023DE4E /* API */,
+				BF34814C2BB10FBA0023DE4E /* Home */,
+				BF3481662BB12C430023DE4E /* Place Holders */,
+				BF3481212BB0C0970023DE4E /* Assets.xcassets */,
+				BF3481232BB0C0970023DE4E /* LaunchScreen.storyboard */,
+				BF3481262BB0C0970023DE4E /* Info.plist */,
+				BF7E3B882BF45E7100361D27 /* GoogleService-Info.plist */,
+				BF34811E2BB0C0920023DE4E /* RoundGames.xcdatamodeld */,
+			);
+			path = RoundGames;
+			sourceTree = "<group>";
+		};
+		BF34812E2BB0C0980023DE4E /* RoundGamesTests */ = {
+			isa = PBXGroup;
+			children = (
+				BF34812F2BB0C0980023DE4E /* RoundGamesTests.swift */,
+			);
+			path = RoundGamesTests;
+			sourceTree = "<group>";
+		};
+		BF3481382BB0C0980023DE4E /* RoundGamesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BF3481392BB0C0980023DE4E /* RoundGamesUITests.swift */,
+				BF34813B2BB0C0980023DE4E /* RoundGamesUITestsLaunchTests.swift */,
+			);
+			path = RoundGamesUITests;
+			sourceTree = "<group>";
+		};
+		BF34814C2BB10FBA0023DE4E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				BF3481482BB10F400023DE4E /* HomeViewController.swift */,
+				BF34814A2BB10FB10023DE4E /* HomeViewController+UI.swift */,
+				BF34815E2BB127AA0023DE4E /* SignInViewController.swift */,
+				BF34814F2BB110370023DE4E /* SignInViewController+UI.swift */,
+				BF3481512BB110560023DE4E /* SignUpViewController.swift */,
+				BF3481532BB110770023DE4E /* SignUpViewController+UI.swift */,
+				BF3481552BB110B60023DE4E /* ForgotPasswordViewController.swift */,
+				BF3481572BB110DE0023DE4E /* ForgotPasswordViewController+UI.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		BF34815D2BB126370023DE4E /* API */ = {
+			isa = PBXGroup;
+			children = (
+				BF3481592BB125F20023DE4E /* Api.swift */,
+				BF34815B2BB126200023DE4E /* Ref.swift */,
+				BF3481602BB12AB00023DE4E /* User.swift */,
+				BF3481622BB12ACE0023DE4E /* UserApi.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		BF3481662BB12C430023DE4E /* Place Holders */ = {
+			isa = PBXGroup;
+			children = (
+				BF26678A2BBBCCF00003C80B /* Hangman Logic */,
+				BF3481642BB12BAC0023DE4E /* PlaceHolderOne.swift */,
+				BFC9E9B72BB3CCE0000061FE /* PlaceHolderTwo.swift */,
+				BFAFC4ED2BBBB9980099FAD2 /* Hangman.swift */,
+				BF2667882BBBCA560003C80B /* Hangman+UI.swift */,
+				BF853D582BBFB51F00FE0871 /* AudioCommands.swift */,
+			);
+			path = "Place Holders";
+			sourceTree = "<group>";
+		};
+		BF7F71602BF70C67003DC49B /* SpeechCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				BF7F715E2BF70C3B003DC49B /* SpeechCoordinator.swift */,
+				BF7F71612BF70CA7003DC49B /* SpeechCoordinator+Availability.swift */,
+				BF7F71632BF70CC8003DC49B /* SpeechCoordinator+Transcription.swift */,
+				BF7F71652BF70F8F003DC49B /* DebuggingIdentifiers.swift */,
+			);
+			path = SpeechCoordinator;
+			sourceTree = "<group>";
+		};
+		C20DEA6A05A6D1C7E7472E96 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C9DE1E5B5FFA1752C1F9C34 /* Pods_RoundGames.framework */,
+				1866D8B01351890D771EE56C /* Pods_RoundGames_RoundGamesUITests.framework */,
+				781A8FAEADE5829BAA067FC7 /* Pods_RoundGamesTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BF3481112BB0C0920023DE4E /* RoundGames */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF34813F2BB0C0980023DE4E /* Build configuration list for PBXNativeTarget "RoundGames" */;
+			buildPhases = (
+				0D4F99456C25B18D20A21DC7 /* [CP] Check Pods Manifest.lock */,
+				BF34810E2BB0C0920023DE4E /* Sources */,
+				BF34810F2BB0C0920023DE4E /* Frameworks */,
+				BF3481102BB0C0920023DE4E /* Resources */,
+				630A537B91F92F67CD2F5464 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RoundGames;
+			productName = RoundGames;
+			productReference = BF3481122BB0C0920023DE4E /* RoundGames.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BF34812A2BB0C0980023DE4E /* RoundGamesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF3481422BB0C0980023DE4E /* Build configuration list for PBXNativeTarget "RoundGamesTests" */;
+			buildPhases = (
+				53794BF01AD4076832C147C7 /* [CP] Check Pods Manifest.lock */,
+				BF3481272BB0C0980023DE4E /* Sources */,
+				BF3481282BB0C0980023DE4E /* Frameworks */,
+				BF3481292BB0C0980023DE4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF34812D2BB0C0980023DE4E /* PBXTargetDependency */,
+			);
+			name = RoundGamesTests;
+			productName = RoundGamesTests;
+			productReference = BF34812B2BB0C0980023DE4E /* RoundGamesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BF3481342BB0C0980023DE4E /* RoundGamesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF3481452BB0C0980023DE4E /* Build configuration list for PBXNativeTarget "RoundGamesUITests" */;
+			buildPhases = (
+				79B76EA25BED7FA6D9EC1876 /* [CP] Check Pods Manifest.lock */,
+				BF3481312BB0C0980023DE4E /* Sources */,
+				BF3481322BB0C0980023DE4E /* Frameworks */,
+				BF3481332BB0C0980023DE4E /* Resources */,
+				8F53026B7C2750BCEFE65CEC /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF3481372BB0C0980023DE4E /* PBXTargetDependency */,
+			);
+			name = RoundGamesUITests;
+			productName = RoundGamesUITests;
+			productReference = BF3481352BB0C0980023DE4E /* RoundGamesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF34810A2BB0C0920023DE4E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					BF3481112BB0C0920023DE4E = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					BF34812A2BB0C0980023DE4E = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = BF3481112BB0C0920023DE4E;
+					};
+					BF3481342BB0C0980023DE4E = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = BF3481112BB0C0920023DE4E;
+					};
+				};
+			};
+			buildConfigurationList = BF34810D2BB0C0920023DE4E /* Build configuration list for PBXProject "RoundGames" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BF3481092BB0C0920023DE4E;
+			productRefGroup = BF3481132BB0C0920023DE4E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BF3481112BB0C0920023DE4E /* RoundGames */,
+				BF34812A2BB0C0980023DE4E /* RoundGamesTests */,
+				BF3481342BB0C0980023DE4E /* RoundGamesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BF3481102BB0C0920023DE4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF3481252BB0C0970023DE4E /* LaunchScreen.storyboard in Resources */,
+				BF3481222BB0C0970023DE4E /* Assets.xcassets in Resources */,
+				BF26678E2BBBCD9E0003C80B /* words.txt in Resources */,
+				BF34811D2BB0C0920023DE4E /* Main.storyboard in Resources */,
+				BF7E3B892BF45E7100361D27 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF3481292BB0C0980023DE4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF3481332BB0C0980023DE4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D4F99456C25B18D20A21DC7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RoundGames-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		53794BF01AD4076832C147C7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RoundGamesTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		630A537B91F92F67CD2F5464 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RoundGames/Pods-RoundGames-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RoundGames/Pods-RoundGames-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RoundGames/Pods-RoundGames-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79B76EA25BED7FA6D9EC1876 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RoundGames-RoundGamesUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F53026B7C2750BCEFE65CEC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RoundGames-RoundGamesUITests/Pods-RoundGames-RoundGamesUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RoundGames-RoundGamesUITests/Pods-RoundGames-RoundGamesUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RoundGames-RoundGamesUITests/Pods-RoundGames-RoundGamesUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BF34810E2BB0C0920023DE4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFC9E9B82BB3CCE0000061FE /* PlaceHolderTwo.swift in Sources */,
+				BF2667922BBBCF630003C80B /* Constants.swift in Sources */,
+				BF34815F2BB127AA0023DE4E /* SignInViewController.swift in Sources */,
+				BF7F71642BF70CC8003DC49B /* SpeechCoordinator+Transcription.swift in Sources */,
+				BF3481632BB12ACE0023DE4E /* UserApi.swift in Sources */,
+				BF3481502BB110370023DE4E /* SignInViewController+UI.swift in Sources */,
+				BF34815C2BB126200023DE4E /* Ref.swift in Sources */,
+				BF7F71622BF70CA7003DC49B /* SpeechCoordinator+Availability.swift in Sources */,
+				BF3481562BB110B60023DE4E /* ForgotPasswordViewController.swift in Sources */,
+				BF3481492BB10F400023DE4E /* HomeViewController.swift in Sources */,
+				BF3481582BB110DE0023DE4E /* ForgotPasswordViewController+UI.swift in Sources */,
+				BF7F715B2BF472D9003DC49B /* audioTestingII.swift in Sources */,
+				BF2667902BBBCDE80003C80B /* GameDataManager.swift in Sources */,
+				BF3481652BB12BAC0023DE4E /* PlaceHolderOne.swift in Sources */,
+				BF7F715F2BF70C3C003DC49B /* SpeechCoordinator.swift in Sources */,
+				BF3481202BB0C0920023DE4E /* RoundGames.xcdatamodeld in Sources */,
+				BF34815A2BB125F20023DE4E /* Api.swift in Sources */,
+				BF3481612BB12AB00023DE4E /* User.swift in Sources */,
+				BF3481542BB110770023DE4E /* SignUpViewController+UI.swift in Sources */,
+				BF34811A2BB0C0920023DE4E /* ViewController.swift in Sources */,
+				BF2667892BBBCA560003C80B /* Hangman+UI.swift in Sources */,
+				BF34814B2BB10FB10023DE4E /* HomeViewController+UI.swift in Sources */,
+				BF7F71662BF70F8F003DC49B /* DebuggingIdentifiers.swift in Sources */,
+				BF7F715D2BF473EA003DC49B /* audioTestingII+UI.swift in Sources */,
+				BF3481522BB110560023DE4E /* SignUpViewController.swift in Sources */,
+				BFAFC4EE2BBBB9980099FAD2 /* Hangman.swift in Sources */,
+				BF3481162BB0C0920023DE4E /* AppDelegate.swift in Sources */,
+				BF853D592BBFB51F00FE0871 /* AudioCommands.swift in Sources */,
+				BF3481182BB0C0920023DE4E /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF3481272BB0C0980023DE4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF3481302BB0C0980023DE4E /* RoundGamesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF3481312BB0C0980023DE4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF34813A2BB0C0980023DE4E /* RoundGamesUITests.swift in Sources */,
+				BF34813C2BB0C0980023DE4E /* RoundGamesUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BF34812D2BB0C0980023DE4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF3481112BB0C0920023DE4E /* RoundGames */;
+			targetProxy = BF34812C2BB0C0980023DE4E /* PBXContainerItemProxy */;
+		};
+		BF3481372BB0C0980023DE4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF3481112BB0C0920023DE4E /* RoundGames */;
+			targetProxy = BF3481362BB0C0980023DE4E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BF34811B2BB0C0920023DE4E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF34811C2BB0C0920023DE4E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BF3481232BB0C0970023DE4E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF3481242BB0C0970023DE4E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BF34813D2BB0C0980023DE4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BF34813E2BB0C0980023DE4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BF3481402BB0C0980023DE4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8669EF2317F3B292F1AFA20A /* Pods-RoundGames.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = RoundGames/RoundGames.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2384X3M7MT;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RoundGames/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = RoundGames;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BF3481412BB0C0980023DE4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90B0B1962B28C7216A804DB7 /* Pods-RoundGames.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = RoundGames/RoundGames.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2384X3M7MT;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RoundGames/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = RoundGames;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BF3481432BB0C0980023DE4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14E017E1912F22648CB6F241 /* Pods-RoundGamesTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2384X3M7MT;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Cloudless.RoundGamesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RoundGames.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RoundGames";
+			};
+			name = Debug;
+		};
+		BF3481442BB0C0980023DE4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 248A5916FCD5D59F08837ABB /* Pods-RoundGamesTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2384X3M7MT;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Cloudless.RoundGamesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RoundGames.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RoundGames";
+			};
+			name = Release;
+		};
+		BF3481462BB0C0980023DE4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E4A44419B0D563CE61DF50E /* Pods-RoundGames-RoundGamesUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2384X3M7MT;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Cloudless.RoundGamesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RoundGames;
+			};
+			name = Debug;
+		};
+		BF3481472BB0C0980023DE4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C89421BB2D326491A5D9FED5 /* Pods-RoundGames-RoundGamesUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2384X3M7MT;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Cloudless.RoundGamesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RoundGames;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF34810D2BB0C0920023DE4E /* Build configuration list for PBXProject "RoundGames" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF34813D2BB0C0980023DE4E /* Debug */,
+				BF34813E2BB0C0980023DE4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF34813F2BB0C0980023DE4E /* Build configuration list for PBXNativeTarget "RoundGames" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF3481402BB0C0980023DE4E /* Debug */,
+				BF3481412BB0C0980023DE4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF3481422BB0C0980023DE4E /* Build configuration list for PBXNativeTarget "RoundGamesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF3481432BB0C0980023DE4E /* Debug */,
+				BF3481442BB0C0980023DE4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF3481452BB0C0980023DE4E /* Build configuration list for PBXNativeTarget "RoundGamesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF3481462BB0C0980023DE4E /* Debug */,
+				BF3481472BB0C0980023DE4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BF34811E2BB0C0920023DE4E /* RoundGames.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BF34811F2BB0C0920023DE4E /* RoundGames.xcdatamodel */,
+			);
+			currentVersion = BF34811F2BB0C0920023DE4E /* RoundGames.xcdatamodel */;
+			path = RoundGames.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BF34810A2BB0C0920023DE4E /* Project object */;
+}
